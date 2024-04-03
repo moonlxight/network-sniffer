@@ -1,7 +1,19 @@
+/*
+ >>=========================================================<<
+ ||  ______         _      __            __               __||
+ || /_  __/      __(_)____/ /___  __    / /__  ____ _____/ /||
+ ||  / / | | /| / / / ___/ __/ / / /_  / / _ \/ __ `/ __  / ||
+ || / /  | |/ |/ / (__  ) /_/ /_/ / /_/ /  __/ /_/ / /_/ /  ||
+ ||/_/   |__/|__/_/____/\__/\__, /\____/\___/\__,_/\__,_/   ||
+ ||                        /____/                           ||
+ >>=========================================================<<
+            Tʜɪꜱ ᴘʀᴏᴊᴇᴄᴛ ᴡᴀꜱ ᴅᴇᴠᴇʟᴏᴘᴇᴅ ʙʏ TᴡɪꜱᴛʏJᴇᴀᴅ ツ
+                     ɢɪᴛʜᴜʙ.ᴄᴏᴍ/ᴍᴏᴏɴʟxɪɢʜᴛ          */
+                     
 #include <gtk/gtk.h>
-#include <pcap.h>
-#include <errno.h>
-#include <string.h>
+#include <pcap.h> // pcap kütüphanesini içeri aktar
+#include <errno.h> // errno.h başlık dosyasını ekledik
+#include <string.h> // strerror fonksiyonu için
 extern pcap_t *handle;
 extern char errbuf[];
 void toggle_sniffer(GtkWidget *widget, gpointer data) {
