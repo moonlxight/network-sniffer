@@ -1,7 +1,7 @@
 #include <gtk/gtk.h>
-#include <pcap.h> // pcap kütüphanesini içeri aktar
-#include <errno.h> // errno.h başlık dosyasını ekledik
-#include <string.h> // strerror fonksiyonu için
+#include <pcap.h>
+#include <errno.h>
+#include <string.h>
 extern pcap_t *handle;
 extern char errbuf[];
 void toggle_sniffer(GtkWidget *widget, gpointer data) {
